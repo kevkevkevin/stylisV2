@@ -1183,8 +1183,8 @@ td {
 }
 
 .octf-btn.octf-btn-dark {
-  color: #fff;
-  background: #1a1a1a;
+  color: #000;
+  background: #CFC401;
 }
 .octf-btn.octf-btn-dark:before, .octf-btn.octf-btn-dark:after {
   background: #CFC401;
