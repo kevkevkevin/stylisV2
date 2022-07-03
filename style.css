@@ -1,50 +1,5 @@
 @charset "UTF-8";
-/*
-Theme Name: Theratio
-Theme URI: http://templates.thememodern.com/theratio/index.html
-Author: ThemeModern
-Author URI: http://thememodern.com
-Description: Theratio is a WordPress theme for Interior Design & Architecture Company. Theratio is easy to use, it provides everything you need to create great looking website. With Theratio you can impress your customer by it’s professional design and the interactivity. Theratio built with latest website technology to ensure your website is looks nice on desktop and mobile. Get Theratio now!
-Version: 1.0
-License: GNU General Public License v2+
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: theratio
-Domain Path: /languages/
-Tags: one-column, two-columns, left-sidebar, right-sidebar, full-width-template, post-formats, theme-options, threaded-comments, translation-ready
 
-*/
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Normalize
-# Typography
-# Elements
-# Forms
-# Navigation
-	## Links
-	## Menus
-# Accessibility
-# Alignments
-# Clearings
-# Widgets
-# Content
-	## Posts and pages
-	## Comments
-# Infinite scroll
-# Media
-	## Captions
-	## Galleries
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Normalize
---------------------------------------------------------------*/
-/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
-/* Document
-	 ========================================================================== */
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Titillium Web:200,300,300i,400,400i,600,600i,700,700i,900');
 @import url('https://fonts.googleapis.com/css?family=Josefin Sans:300,300i,400,400i,500,500i,600,600i,700,700i');
@@ -69,6 +24,35 @@ body {
 /* ADDITIONAL CSS
 	 ========================================================================== */
 /**/
+/*scrollbar theme*/
+::-webkit-scrollbar {width:6px;}
+::-webkit-scrollbar-track { background: #000;}
+::-webkit-scrollbar-thumb:hover {background: #CFC401;}
+::-webkit-scrollbar-thumb {
+/* background-image: -webkit-linear-gradient(45deg, #ffbd84, #ff1f8e);
+background-image: -o-linear-gradient(45deg, #ffbd84, #ff1f8e);
+background-image: linear-gradient(45deg, #ffbd84, #ff1f8e); */
+background: #CFC401;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #a8a10f, #CFC401);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #CFC401, #CFC401); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.proj_link{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2b2e31;
+}
+
+#bttn-dark {
+  background-color: #CFC401;
+}
+
+#bttn-dark:hover {
+  background-color: #cfc50100;
+  color: #fff;
+  border-color: #fff;
+}
+
 .mr-25 {
   margin-right: 25px;
 }
@@ -666,7 +650,7 @@ big {
   background-size: 0 2px;
   background-position: 0 90%;
   background-repeat: no-repeat;
-  background-image: linear-gradient(0deg, #7e7e7e, #f5f5f5);
+  background-image: linear-gradient(0deg, #262626, #f5f5f5);
 }
 .title-link:hover {
   background-size: 100% 2px;
@@ -1131,17 +1115,17 @@ td {
   font-family: "Titillium Web", sans-serif;
   font-weight: 600;
   text-align: center;
-  background: #1a1a1a;
+  background: #CFC401;
   cursor: pointer;
   border: 1px solid transparent;
-  color: #fff;
+  color: #000;
   outline: none;
   position: relative;
 }
 .octf-btn:before, .octf-btn:after {
   content: "";
   position: absolute;
-  background: #1a1a1a;
+  background: #CFC401;
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
@@ -1203,11 +1187,11 @@ td {
   background: #1a1a1a;
 }
 .octf-btn.octf-btn-dark:before, .octf-btn.octf-btn-dark:after {
-  background: #1a1a1a;
+  background: #CFC401;
 }
 .octf-btn.octf-btn-dark:visited {
-  color: #fff;
-  background: #1a1a1a;
+  color: #262626;
+    background: #cec323;
 }
 .octf-btn.octf-btn-dark:hover, .octf-btn.octf-btn-dark:focus {
   background: #fff;
@@ -2587,8 +2571,8 @@ a:hover, a:active {
   letter-spacing: 0.6px;
   line-height: 1.1;
   display: inline-block;
-  color: #fff;
-  background: #1a1a1a;
+  color: #262626;
+    background: #cbc032;
   padding: 8px 10px;
   margin-right: 7px;
   margin-bottom: 10px;
@@ -3719,7 +3703,7 @@ object {
   font-family: "Josefin Sans", sans-serif;
   font-size: 14px;
   font-weight: 600;
-  color: #9f9e9e;
+  color: #cec323;
   display: inline-block;
   margin-bottom: 6px;
   text-transform: uppercase;
@@ -3891,7 +3875,7 @@ object {
 .icon-box--bg-img.icon-box--is-line-hover:before, .icon-box--bg-img.icon-box--is-line-hover:after {
   content: "";
   position: absolute;
-  background: #1a1a1a;
+  background: #CFC401;
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
@@ -3933,7 +3917,7 @@ object {
   color: #fff;
 }
 .icon-box--bg-img:hover .btn-details:before {
-  background: #505050;
+  background: #CFC401;
 }
 
 .icon-box--classic {
@@ -5745,7 +5729,7 @@ object {
   padding: 0;
 }
 .projects-grid.style-2 .portfolio-info .portfolio-info-inner h5 a {
-  color: #1a1a1a;
+  color: #cbc032;
 }
 .projects-grid.style-2 .portfolio-info .portfolio-info-inner .portfolio-cates {
   padding: 0;
@@ -8687,6 +8671,7 @@ ul.style-default li:last-child, ol.style-default li:last-child {
     background-image: url(images/bg/bg1-home3.png);
     background-position: center left;
     background-repeat: no-repeat;
+    background-color: #262626;
 }
 .testi-slide-block-3 {
     padding: 60px;
@@ -9874,8 +9859,8 @@ ul.style-default li:last-child, ol.style-default li:last-child {
 
 /* Back To Top*/
 #back-to-top {
-  background: #9f9e9e;
-  color: #fff;
+  background: #ccc123;
+    color: #262626;
   border: 0 none;
   cursor: pointer;
   width: 42px;
